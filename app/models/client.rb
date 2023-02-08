@@ -1,0 +1,4 @@
+class Client < ApplicationRecord
+  has_many :portfolios
+  has_many :stocks, through: :portfolios
+end
